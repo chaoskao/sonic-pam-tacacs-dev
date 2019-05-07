@@ -55,11 +55,11 @@ namespace PamTacPlusServerMockTest
         {
         }
 
-        void SetUp()
+        void SetUp() override
         {
         }
 
-        void TearDown()
+        void TearDown() override
         {
         }
     };

@@ -47,7 +47,7 @@ namespace PamTacPlusTest
         {
         }
 
-        void SetUp()
+        void SetUp() override
         {
             std::stringstream path;
             path << SERVER_BIN_PATH << "/tac_plus -C " << SERVER_BIN_PATH << "/tac_plus.conf -p " << SERVER_PORT;
@@ -56,7 +56,7 @@ namespace PamTacPlusTest
             sleep(5);
         }
 
-        void TearDown()
+        void TearDown() override
         {
             system("killall tac_plus");   
         }
